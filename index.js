@@ -1,7 +1,7 @@
 const express = require('express');
 require('./models/user');
 require('./services/passport');
-const keys = require('./config/prod');
+const keys = require('./config/keys');
 
 const authRoutes = require('./routes/authRoutes');
 const cookieSession = require('cookie-session');
