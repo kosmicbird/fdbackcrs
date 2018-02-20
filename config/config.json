@@ -1,6 +1,6 @@
 {
     "production": {
-        "PORT": "process.env.NODE_ENV",
+        "PORT": 41658,
         "MONGODB_URI": "mongodb://heroku_s3q1lbfb:3kbfsoc1o15mhrc928a08qq26d@ds241658.mlab.com:41658/heroku_s3q1lbfb",
         "JWT_SECRET": "FDSFSDFSDFS",
         "googleClientID": "1090901351633-cdislgrsrr286t1vtqhqmp5q5qfp75r0.apps.googleusercontent.com",
