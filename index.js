@@ -1,7 +1,6 @@
 const express = require('express');
 require('./models/user');
 require('./services/passport');
-const keys = require('./config/keys');
 
 const authRoutes = require('./routes/authRoutes');
 const cookieSession = require('cookie-session');
@@ -15,7 +14,7 @@ const app = express();
 app.use(
     cookieSession({
         maxAge: 30 * 24 * 60 * 60 * 1000,
-        keys: [keys.cookieKey]
+        keys: [process.env.cookieKey]
     })
 );
 

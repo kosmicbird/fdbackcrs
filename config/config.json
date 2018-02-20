@@ -1,13 +1,20 @@
 {
     "production": {
         "PORT": 5000,
-        "JWT_SECRET": "FDSFSDFSDFS"
+        "MONGODB_URI": "mongodb://localhost:27017/React",
+        "JWT_SECRET": "FDSFSDFSDFS",
+        "googleClientID": "1090901351633-cdislgrsrr286t1vtqhqmp5q5qfp75r0.apps.googleusercontent.com",
+        "googleClientSecret": "LK2kp4Kx0tksfG53vcFJzBue",
+        "cookieKey": "realprod"
 
     },
 
     "dev": {
         "PORT": 5000,
         "MONGODB_URI": "mongodb://localhost:27017/ReactTest",
-        "JWT_SECRET": "IUUYTYEGDFGDG"
+        "JWT_SECRET": "IUUYTYEGDFGDG",
+        "googleClientID": "106289417324-v4b6373tb65iouk4n5tt4j5v74ghirgg.apps.googleusercontent.com",
+        "googleClientSecret": "NwafGxTAvB_ueIK7lmf5ubEc",
+        "cookieKey": "yeacookie"
     }
 }
