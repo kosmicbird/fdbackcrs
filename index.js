@@ -4,7 +4,7 @@ require('./models/user');
 require('./services/passport');
 
 const keys = require('./config/keys');
-require('./routes/authRoutes')(app);
+
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 
@@ -26,7 +26,8 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-authRoutes(app);
+
+require('./routes/authRoutes')(app);
 
 const PORT = process.env.PORT || 5000;
 
