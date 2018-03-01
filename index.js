@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 require('./models/user');
+require('./models/survey');
 require('./services/passport');
 
 const keys = require('./config/keys');
@@ -33,6 +34,7 @@ app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app);
 
 if (process.env.NODE_ENV === 'production') {
     //Express serves up production assets like main.js and main.css
